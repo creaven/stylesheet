@@ -7,7 +7,7 @@ How to use
 ----------
 
 	#js
-	var sheet = new Stylesheet();
+	var sheet = new StyleSheet();
 	
 	sheet.addRules({
 

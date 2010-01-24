@@ -13,18 +13,19 @@ provides: Stylesheet
 */
 
 
-var StyleSheet=new Class({
+var Stylesheet=new Class({
  
 	initialize: function(){
 		this.createSheet();
 		this.rules = {};
 		this.styles = {};
 		this.index = [];
+		this.temp = new Element('div');
 	},
  
 	createSheet: function(){
 		var style = new Element('style').inject(document.head);
-		this.sheet = style.styleSheet||style.sheet;
+		this.sheet = style.styleSheet || style.sheet;
 	},
  
 	addRule: function(selector, styles){
@@ -59,10 +60,9 @@ var StyleSheet=new Class({
 	},
  
 	stylesToString: function(styles){
-		var string = '';
-		for(p in styles){
-			string += p.hyphenate() + ':' + styles[p] + ';\n';
-		}
+		this.temp.setStyles(styles);
+		var string = this.temp.style.cssText;
+		this.temp.style.cssText = '';
 		return string;
 	},
  
