@@ -1,0 +1,26 @@
+name: Stylesheet
+ 
+web: [http://github.com/creaven/stylesheet/](http://github.com/creaven/stylesheet/)
+ 
+description: js stylesheet
+ 
+authors: [Anton Samoylov](http://mifjs.net)
+ 
+license: MIT License
+ 
+copyright: &copy; [Anton Samoylov](http://mifjs.net)
+ 
+author: magmoro
+ 
+category: Native
+ 
+tags: [sheet, stylesheet, css]
+ 
+sources:
+  - "Source/Stylesheet.js"
+
+demo: 
+
+current: dev
+
+
