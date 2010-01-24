@@ -13,7 +13,7 @@ provides: Stylesheet
 */
 
 
-var Stylesheet=new Class({
+var Stylesheet = new Class({
 	
 	version: '0.9',
  
