@@ -14,6 +14,8 @@ provides: Stylesheet
 
 
 var Stylesheet=new Class({
+	
+	version: '0.9',
  
 	initialize: function(){
 		this.createSheet();
