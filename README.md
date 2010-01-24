@@ -2,6 +2,7 @@ Stylesheet
 ==========
 js stylesheet
 
+![Screenshot](http://github.com/creaven/stylesheet/raw/master/sheet.gif)
 
 How to use
 ----------
@@ -24,3 +25,5 @@ How to use
 			padding: 0
 		}
 	});
+
+methods: addRule, addRules, getRule, getRules, removeRule
